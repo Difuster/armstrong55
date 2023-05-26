@@ -1,0 +1,138 @@
+@import '../../styles/extends.scss';
+
+.footer {
+  background: #212121;
+  background-image: url('../../assets/footer/footer-bg.jpg');
+  color: #fff;
+  padding: 20px 0;
+  &__row {
+    @extend %d-flex-row-nowrap;
+    justify-content: space-between;
+    >address {
+      >h4 {
+        font-size: 18px;
+      }
+    }
+  }
+  &__col {
+    >ul>li {
+      list-style: none;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+  }
+  &__firm-name {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &__text {
+    margin-bottom: 15px;
+  }
+  &__logos {
+    @extend %d-flex-row-nowrap;
+    align-items: center;
+    >img {
+      margin-right: 15px;
+    }
+    >img:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  &__link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  &__link:visited {
+    color: #fff;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 595px) and (max-width : 690px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 595px) and (max-width : 690px) {
+  .footer {
+    &__row {
+      flex-direction: column;
+    }
+    &__col {
+      ul {
+        padding: 0;
+      }
+      li {
+        font-size: 16px;
+      }
+    }
+    &__logos {
+      margin-bottom: 20px;
+    }
+    address {
+      font-size: 16px;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 480px) and (max-width : 595px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 480px) and (max-width : 595px) {
+  .footer {
+    &__row {
+      flex-direction: column;
+    }
+    &__col {
+      ul {
+        padding: 0;
+      }
+      li {
+        font-size: 16px;
+      }
+    }
+    &__logos {
+      margin-bottom: 20px;
+    }
+    address {
+      font-size: 16px;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 320px) and (max-width : 480px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .footer {
+    &__row {
+      flex-direction: column;
+    }
+    &__col {
+      ul {
+        padding: 0;
+      }
+      li {
+        font-size: 16px;
+      }
+    }
+    &__logos {
+      margin-bottom: 20px;
+      >img {
+        width: 28%;
+        height: 50%;
+      }
+    }
+    address {
+      font-size: 16px;
+    }
+  }
+
+}

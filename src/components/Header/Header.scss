@@ -1,0 +1,88 @@
+@import '../../styles/extends.scss';
+
+.header {
+  position: relative;
+  background-color: #175398;
+  color: #fff;
+  &__row {
+    @extend %d-flex-row-nowrap;
+    justify-content: space-between;
+  }
+  &__logo {
+    font-family: 'Tahoma';
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-top: 1rem;
+  }
+  &__link {
+    color: #fff;
+    text-decoration: none;
+  }
+  &__link:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  &__link:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+  .header {
+    &__row {
+      flex-direction: column;
+    }
+  }
+ }
+ 
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 690px) and (max-width : 800px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 690px) and (max-width : 800px) {
+  .header {
+    &__row {
+      flex-direction: column;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 595px) and (max-width : 690px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 595px) and (max-width : 690px) {
+  .header {
+    &__row {
+      flex-direction: column;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 480px) and (max-width : 595px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 480px) and (max-width : 595px) {
+  .header {
+    &__row {
+      flex-direction: column;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 320px) and (max-width : 480px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .header {
+    &__row {
+      flex-direction: column;
+    }
+  }
+}

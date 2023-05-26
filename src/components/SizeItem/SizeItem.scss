@@ -1,0 +1,36 @@
+.sizes-item {
+  &__wrapper {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #212121;
+  }
+  &__row {
+    align-self: center;
+  }
+  &__title {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  &__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  &__value {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-align: center;
+    align-self: center;
+  }
+  &__image {
+    min-width: 60px;
+  }
+}

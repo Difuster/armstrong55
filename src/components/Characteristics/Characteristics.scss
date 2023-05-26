@@ -1,0 +1,23 @@
+.chars {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  &__row {
+    font-size: 18px;
+    border-bottom: 2px solid #212121;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  &__value {
+    align-items: center;
+    padding-bottom: 29px;
+  }
+}

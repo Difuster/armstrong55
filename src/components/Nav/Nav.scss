@@ -1,0 +1,124 @@
+@import '../../styles/extends.scss';
+
+.nav {
+  @extend %d-flex-col;
+  position: absolute;
+  top: 80px;
+  left: 5%;
+  background-color: #fff;
+  color: #212121;
+  border: 2px solid #212121;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.burger {
+  display: none;
+  &__icon-open {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+  }
+  &__icon-close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+  }
+  &__menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.92);
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+    z-index: 10;
+  }
+  .burger-hidden {
+    transform: translate(100%, 0);
+  }
+  .burger-visible {
+    transform: translate(0, 0);
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 800px) and (max-width : 1024px)--------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 800px) and (max-width : 1024px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 690px) and (max-width : 800px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 690px) and (max-width : 800px) {
+  .nav {
+    display: none;
+   }
+  .burger {
+    display: block;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 595px) and (max-width : 690px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 595px) and (max-width : 690px) {
+  .nav {
+    display: none;
+   }
+  .burger {
+    display: block;
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 480px) and (max-width : 595px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 480px) and (max-width : 595px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+    &__icon-open {
+      right: 30px;
+    }
+    &__menu {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// --------------------------------------------------------------------------------------------
+// ----------------------(min-width : 320px) and (max-width : 480px)---------------------------
+// --------------------------------------------------------------------------------------------
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .nav {
+    display: none;
+  }
+  .burger {
+    display: block;
+    &__icon-open {
+      right: 15px;
+    }
+    &__menu {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

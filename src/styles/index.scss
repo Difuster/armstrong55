@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+@import './reset.scss';
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Arial', 'Tahoma', 'Verdana',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #212121;
+  font-size: 14px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}

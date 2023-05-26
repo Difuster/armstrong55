@@ -1,0 +1,43 @@
+@import '../../styles/extends.scss';
+%pseudo-element {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.contacts {
+  &-paddings {
+    padding: 1rem 0;
+  }
+  &__address::before {
+    content: url('../../assets/icons/location.png');
+    @extend %pseudo-element;
+  }
+  &__phone::before {
+    content: url('../../assets/icons/phone.png');
+    @extend %pseudo-element;
+  }
+  &__mail::before {
+    content: url('../../assets/icons/mail.png');
+    @extend %pseudo-element;
+  }
+  &-display {
+    align-items: center;
+    @extend %d-flex-row-nowrap;
+    margin-bottom: 10px;
+  }
+  &-display:last-child {
+    margin-bottom: 0px;
+  }
+  &__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  &__link:hover {
+    color: #fff;
+  }
+  &__link:visited {
+    color: #fff;
+  }
+}
